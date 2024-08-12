@@ -1,0 +1,69 @@
+<!-- <ngx-charts-pie-chart
+[view]="[300, 300]"
+[results]="chartData"
+[legend]="false"
+[labelText]="labelText"
+>
+</ngx-charts-pie-chart> -->
+
+
+<!-- <ngx-charts-pie-chart
+      [view]="[300, 300]"
+      [results]="chartData"
+      [legend]="false"
+      (select)="onSelect($event)"
+    >
+      <svg:text
+        *ngFor="let data of chartData"
+        [attr.x]="labelX(data)"
+        [attr.y]="labelY(data)"
+        text-anchor="middle"
+        dominant-baseline="central"
+        font-size="12"
+      >
+        {{ data.name }}: {{ data.value }}
+      </svg:text>
+    </ngx-charts-pie-chart> -->
+
+<!-- 
+    <div class="pie-chart">
+      <div class="chart-container">
+        <div class="chart">
+          <div class="slice" *ngFor="let data of chartData; let i = index" [ngStyle]="getSliceStyles(i)">
+            <span class="label">{{ data.label }}</span>
+            <span class="percentage">{{ data.percentage }}%</span>
+          </div>
+        </div>
+      </div>
+    </div> -->
+
+
+
+
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css" rel="stylesheet">
+<div class="container">
+    <div class="row">
+        <div class="col-md-4 col-xl-3 center">
+            <div class="card bg-c-blue order-card">
+                <div class="card-block">
+                    <h6 class="m-b-20">Orders Received</h6>
+                    <h2 class="text-right"><i class="fa fa-cart-plus f-left"></i><span>486</span></h2>
+                    <p class="m-b-0">Completed Orders<span class="f-right">351</span></p>
+                </div>
+            </div>
+        </div>
+        
+        <div class="col-md-4 col-xl-3">
+            <div class="card bg-c-green order-card">
+                <div class="card-block">
+                    <h6 class="m-b-20">Orders Received</h6>
+                    <h2 class="text-right"><i class="fa fa-rocket f-left"></i><span>486</span></h2>
+                    <p class="m-b-0">Completed Orders<span class="f-right">351</span></p>
+                </div>
+            </div>
+        </div>
+        
+        
+	</div>
+</div>
+    

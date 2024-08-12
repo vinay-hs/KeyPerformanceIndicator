@@ -1,0 +1,63 @@
+<div class="background">
+      <div class="container">
+        <div class="screen">
+          <div class="screen-header">
+            <div class="screen-header-left">
+              <div class="screen-header-button close"></div>
+            <div class="screen-header-button maximize"></div>
+            <div class="screen-header-button minimize"></div>
+          </div>
+          <div class="screen-header-right">
+              <div class="screen-header-ellipsis"></div>
+            <div class="screen-header-ellipsis"></div>
+            <div class="screen-header-ellipsis"></div>
+          </div>
+        </div>
+        <div class="screen-body">
+            <div class="screen-body-item left">
+              <div class="app-title">
+                <span>GENERATE</span>
+                <span>REPORT</span>
+            </div>
+
+            <svg xmlns="http://www.w3.org/2000/svg" width="3.2em" height="3.2em" fill="currentColor" class="bi bi-file-earmark-text-fill text-info" viewBox="0 -15 40 40">
+                  <path d="M9.293 0H4a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h8a2 2 0 0 0 2-2V4.707A1 1 0 0 0 13.707 4L10 .293A1 1 0 0 0 9.293 0zM9.5 3.5v-2l3 3h-2a1 1 0 0 1-1-1zM4.5 9a.5.5 0 0 1 0-1h7a.5.5 0 0 1 0 1h-7zM4 10.5a.5.5 0 0 1 .5-.5h7a.5.5 0 0 1 0 1h-7a.5.5 0 0 1-.5-.5zm.5 2.5a.5.5 0 0 1 0-1h4a.5.5 0 0 1 0 1h-4z"/>
+              </svg>
+          </div>
+        <form [formGroup]="reportForm" (submit)="onFormSubmit()">
+          <div class="screen-body-item">
+              <div class="app-form">
+                <div class="app-form-group">
+                  <!-- <input class="app-form-control" placeholder="VERTICAL"  > -->
+                  <select id="form_need" name="need" class="app-form-control" formControlName="vertical" required="required" data-error="Please specify your need.">
+                    <option value="" placeholder="VERTICAL" class="app-form-control" selected disabled>--Select Vertical--</option>
+                    <!-- <option  value="vertical.id" >BFS</option> -->
+                    <option  value="vertical.id" >M&C</option>
+                    <option  value="vertical.id" >HCI</option>
+
+                    <option  value="vertical.id" >GTT</option>
+                    <option *ngFor="let v of verticalArray" value="v.id" [value]="v.id">{{ v.verticalName }} </option>
+
+                </select>
+              </div>
+              <div class="app-form-group">
+                  <!-- <input class="app-form-control" placeholder="EMPLOYEE ID" > -->
+                  <select id="form_need" name="need" class="app-form-control" formControlName="employee"  required="required" data-error="Please specify your need.">
+                    <option value="" placeholder="VERTICAL" class="app-form-control" selected disabled>--Select Employee--</option>
+                    <!-- <option  value="vertical.id" >2000080631</option> -->
+
+                    <option *ngFor="let e of employeearray" value="e.employeeId" [value]="e.employeeId">{{ e.employeeId }} -- {{e.firstName}}</option>
+                </select>
+              </div>
+
+              <div class="app-form-group buttons">
+                  <button routerLink="/mco/generatedata" class="app-form-button">GENERATE</button>
+              </div>
+            </div>
+          </div>
+        </form>
+        </div>
+      </div>
+
+    </div>
+  </div>

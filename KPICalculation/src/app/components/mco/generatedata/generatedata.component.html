@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html>
+    <head>
+    <title>Employee Report</title>
+</head>
+<body>
+    <div class="card" style="background-color: rgba(135, 206, 250,0.4);">
+    <div class="card-inner"  >
+    <div>
+    <h2>Employee Report</h2>
+</div>
+    <div>
+
+</div>
+</div>
+
+<div id="cards-container" >
+    <!-- Initial card content -->
+    <div class="card">
+    <div class="card-inner">
+    <div>
+    <label class="card-label">Name:</label>
+    <input type="text" class="card-field" value="{{allData.firstName}}" disabled>
+</div>
+<div>
+    <label class="card-label">Role:</label>
+    <input type="text" class="card-field" value="{{allData.role}}" disabled>
+</div>
+</div>
+<div class="card-inner">
+    <div>
+    <label class="card-label">Email:</label>
+    <input type="text" class="card-field" value="{{allData.email}}" disabled>
+</div>
+<div>
+    <label class="card-label">Employee ID:</label>
+    <input type="text" class="card-field" value="{{allData.employeeId}}2000080631" disabled>
+</div>
+</div>
+<div class="card-inner">
+    <div>
+    <label class="card-label">Vertical Name:</label>
+    <input type="text" class="card-field" value="{{allData.verticalName}}" disabled>
+</div>
+<div>
+    <label class="card-label">Phone Number:</label>
+    <input type="text" class="card-field" value="{{allData.mobileNumber}}" disabled>
+</div>
+</div>
+
+<table>
+    <thead>
+    <tr>
+    <th>KPI </th>
+    <th>Weightage</th>
+    <th>Target</th>
+    <th>Achieved</th>
+    <th>Period(year)</th>
+</tr>
+</thead>
+    <tbody>
+    <tr>
+    <td>Growth Revenue</td>
+    <td>90%</td>
+    <td>95%</td>
+    <td>Q2 2023</td>
+    <td>2</td>
+</tr>
+    <tr>
+    <td>Gross margin</td>
+    <td>100%</td>
+    <td>98%</td>
+    <td>Q2 2023</td>
+    <td>1</td>
+</tr>
+    <tr>
+    <td>Stracture Net Margin</td>
+    <td>95%</td>
+    <td>92%</td>
+    <td>Q2 2023</td>
+    <td>2</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</div>
+
+<script>
+       function createNewCard() {
+               // Create a new card and append it to the cards container
+           var cardContainer = document.getElementById("cards-container");
+
+           var newCard = document.createElement("div");
+                      newCard.className = "card";
+
+           var cardContent = `
+           <div class="card-inner">
+            <div>
+            <label class="card-label">Name:</label>
+            <input type="text" class="card-field" disabled>
+            </div>
+           <div>
+            <label class="card-label">Role:</label>
+            <input type="text" class="card-field" disabled>
+            </div>
+           </div>
+           <div class="card-inner">
+            <div>
+            <label class="card-label">Email:</label>
+            <input type="text" class="card-field" disabled>
+            </div>
+           <div>
+            <label class="card-label">Employee ID:</label>
+            <input type="text" class="card-field" disabled>
+            </div>
+           </div>
+           <div class="card-inner">
+            <div>
+            <label class="card-label">Vertical Name:</label>
+            <input type="text" class="card-field" disabled>
+            </div>
+           <div>
+            <label class="card-label">Phone Number:</label>
+            <input type="text" class="card-field" disabled>
+            </div>
+           </div>
+
+<table>
+    <thead>
+    <tr>
+    <th>KPI Weightage</th>
+    <th>Target</th>
+    <th>Achieved</th>
+    <th>Period</th>
+    </tr>
+    </thead>
+    <tbody>
+    <tr>
+    <td>...</td>
+    <td>...</td>
+    <td>...</td>
+    <td>...</td>
+    </tr>
+    <tr>
+    <td>...</td>
+    <td>...</td>
+    <td>...</td>
+    <td>...</td>
+    </tr>
+    <tr>
+    <td>...</td>
+    <td>...</td>
+    <td>...</td>
+    <td>...</td>
+    </tr>
+    </tbody>
+    </table>
+           `;
+
+           newCard.innerHTML = cardContent;
+                      cardContainer.appendChild(newCard);
+                  }
+           </script>
+           </body>
+           </html>

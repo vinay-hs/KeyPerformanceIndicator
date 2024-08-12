@@ -1,0 +1,26 @@
+﻿ID,Vertical_Name,Vertical_Description,KPI _Name,Previous Year Achieve,Target for this Year
+1,BFS, BFS Description,Growth Revenue,20000,30000
+2,BFS, BFS Description,Net Profit,40000,60000
+3,BFS, BFS Description,Structure net margin,7000,8000
+4,BFS, BFS Description,Growth Margin,60000,90000
+5,BFS, BFS Description,Organization Revenue,30000,70000
+6,HCI,HCI Description,Growth Revenue,20000,40000
+7,HCI,HCI Description,Net Profit,40000,90000
+8,HCI,HCI Description,Structure net margin,50000,70000
+9,HCI,HCI Description,Growth Margin,10000,40000
+10,HCI,HCI Description,Organization Revenue,30000,80000
+11,HTPS,HTPS Description,Growth Revenue,10000,40000
+12,HTPS,HTPS Description,Net Profit,60000,70000
+13,HTPS,HTPS Description,Structure net margin,70000,80000
+14,HTPS,HTPS Description,Growth Margin,80000,90000
+15,HTPS,HTPS Description,Organization Revenue,10000,30000
+16,GTT,GTT Description,Growth Revenue,20000,50000
+17,GTT,GTT Description,Net Profit,40000,80000
+18,GTT,GTT Description,Structure net margin,50000,90000
+19,GTT,GTT Description,Growth Margin,60000,70000
+20,GTT,GTT Description,Organization Revenue,90000,80000
+21,M&C,M&C Description,Growth Revenue,10000,30000
+22,M&C,M&C Description,Net Profit,30000,50000
+23,M&C,M&C Description,Structure net margin,60000,80000
+24,M&C,M&C Description,Growth Margin,70000,90000
+25,M&C,M&C Description,Organization Revenue,80000,90000

@@ -1,0 +1,23 @@
+<div>
+
+  <div class="card" *ngFor="let dropdown of dropdowns">
+
+    <button class="dropdown" (click)="toggleForm(dropdown)">{{ dropdown.label }}</button>
+
+    <div *ngIf="dropdown.showForm" class="form-container">
+
+      <form>
+
+        <input type="text" placeholder="Weightage">
+
+        <input type="text" placeholder="Role">
+
+        <button type="button">Submit</button>
+
+      </form>
+
+    </div>
+
+  </div>
+
+</div>

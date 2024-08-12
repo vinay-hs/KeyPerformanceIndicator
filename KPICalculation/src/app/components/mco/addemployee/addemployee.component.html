@@ -1,0 +1,50 @@
+
+<div class="modal" tabindex="-1" role="dialog">
+    <div class="modal-dialog">
+    <div class="modal-content">
+    <div class="modal-header">
+    <h5 class="modal-title">Add Employee</h5>
+    <button type="button" class="close" data-dismiss="modal" (click)="closePopup()"  aria-label="Close">
+    <span aria-hidden="true">&times;</span>
+    </button>
+    </div>
+    <div class="row justify-content-center text-left">
+    <!-- <div class="form-group col-sm-6 flex-column d-flex">
+        <label for="form-control-label px-3">Select Employee: </label>
+        <select id="form_need" name="need" class="form-control" required="required" data-error="Please specify your need.">
+            <option value="" selected disabled>--Select Your Issue--</option>
+            <option >2000080631</option>
+            <option >2000080632</option>
+            <option >2000080633</option>
+            <option >2000080634</option>
+            
+        </select>
+        
+        <br>
+        <button type="button" class="btn btn-primary">Add</button>
+    </div> -->
+    <div class="row justify-content-between text-left">
+        <label>Key Performance Indicators: </label>
+        <div class="form-group col-sm-4 flex-column d-flex"> <label class="form-control-label px-3"><span class="text-danger"> </span></label>
+            <select id="form_need" name="need" class="form-control" required="required" data-error="Please specify your need.">
+                <option value="" selected disabled>--Select KPI--</option>
+                <option >KPI1</option>
+                <option >KPI2</option>
+                <option >KPI3</option>
+                <option >KPI4</option>
+                
+            </select> </div>
+        <div class="form-group col-sm-4 flex-column d-flex"> <label class="form-control-label px-3"><span class="text-danger"> </span></label> <input type="text" id="mob" name="mob" placeholder="Previour Year achived" onblur="validate(4)"> </div>
+        <div class="form-group col-sm-4 flex-column d-flex"> <label class="form-control-label px-3"><span class="text-danger"> </span></label> <input type="text" id="job" name="job" placeholder="Target for this year" onblur="validate(5)"> </div>
+
+    </div>
+    
+    </div>
+    <br>
+    <div class="modal-footer">
+    <button type="button" class="btn btn-secondary" routerLink="/mco/vericalview" (click)="closePopup()" data-dismiss="modal">Close</button>
+    <button type="button" class="btn btn-primary">Save</button>
+    </div>
+    </div>
+    </div>
+    </div>
